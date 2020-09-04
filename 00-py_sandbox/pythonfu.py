@@ -4,7 +4,7 @@ print("Hello World!")
 #defining variables
 a, b = 1, 2
 print(str(a) + " + " + str(b) + " = " + str(a + b))
-print("{} + {} = {}").format(a, b, a + b)
+print("{} + {} = {}".format(a, b, a + b))
 print("%d + %d = %d" %(a, b, a + b))
 print("")
 
