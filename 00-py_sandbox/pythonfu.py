@@ -15,6 +15,12 @@ def sampleFunction():
 #invoke sampleFunction
 sampleFunction()
 
+#function with parameter and return
+def sampleFunction2(name):
+    return ("Happy Birthday " + name)
+
+print(sampleFunction2("Hans"))
+
 #create lists
 #1D variety
 list1 = [1, "hello", 3.14]
