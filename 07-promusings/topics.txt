@@ -1,0 +1,8 @@
+1) Digital Divide
+  * Potentially grab data from https://data2go.nyc or https://opendata.cityofnewyork.us/ if anything is available.
+
+2) Environment
+  * https://www.bbc.com/future/article/20150402-the-worst-place-on-earth raised an interesting problem created by the tech industry.
+
+3) Net Neutrality
+  * Don't know as much as I probably should about this topic, so worth exploring.
