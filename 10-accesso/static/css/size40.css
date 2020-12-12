@@ -1,0 +1,35 @@
+h1{
+    font-size: 62px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+blockquote {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 41px;
+}
+
+body{
+    color: yellow;
+}
+
+p {
+    font-size: 40px;
+}
+
+ol, .btn {
+    font-size: 28px;
+}
+
+tr, th {
+    font-size: 28px;
+}

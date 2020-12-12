@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Jeopardy Game - Clue Setup{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Update the Clue</h1>
+        <br/>
+
+        <form action="/updateClue/{{clue_to_update.id}}" METHOD = "POST">
+            <h3>Clue:</h3>
+            <input type="text" placeholder="Clue" name="clue" value="{{clue_to_update.clue}}">
+            <br/>
+            <h3>Question:</h3>
+            <input type="text" placeholder="Question" name="question" value="{{clue_to_update.question}}">
+            <input type="submit" value="Update Clue" class="btn btn-secondary">
+        </form>
+
+    </div>
+{% endblock %}

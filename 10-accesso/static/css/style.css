@@ -1,0 +1,91 @@
+h1{
+    text-align: left;
+}
+
+body{
+    font-family: 'Luckiest Guy', cursive;
+}
+
+p {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.speech_button {
+  background: white;
+  border: none;
+  cursor: pointer;
+  height: 48px;
+  outline: none;
+  padding: 0;
+  width: 48px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  height: 48px;
+  outline: none;
+  padding: 0;
+  width: 48px;
+  font-size: 30px;
+}
+#play {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+}
+
+#play.played {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+}
+
+#pause {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+}
+
+#pause.paused {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+}
+
+#stop {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+}
+
+#stop.stopped {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+}
+
+.clueDiv, .ansDiv {
+    display: none;
+}
+
+.playerDiv {
+    border-style: dashed;
+}
+
+.buttons {
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+iframe {
+    display: block;
+    border-style: none;
+    margin: auto;
+}

@@ -1,0 +1,29 @@
+h1, h2, h3, h4, blockquote {
+    color: black;
+}
+
+body{
+    background: white;
+    color: black;
+}
+
+p, table {
+    color:black
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+ol {
+    color: blue;
+}
+
+button {
+  background: none;
+}
+
+.playerDiv {
+    background: #dddddd;
+    border-color: #ffffff;
+}

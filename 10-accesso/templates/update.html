@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Jeopardy Game - Player Setup{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Enter player names</h1>
+        <br/>
+
+        <form action="/update/{{player_to_update.id}}" METHOD = "POST">
+            <input type="text" placeholder="Name" name="name" value="{{player_to_update.name}}">
+            <input type="submit" value="Update Name" class="btn btn-secondary">
+        </form>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,34 @@
+h1,  h2, h3, h4 {
+    color: orange;
+}
+
+body{
+    background: blue;
+    color: white;
+}
+
+p, table {
+    color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #0000bb;
+}
+
+ol {
+    color: yellow;
+}
+
+button {
+  background: lightgrey;
+}
+
+.btn-outline-secondary {
+    border-color: yellow;
+    color: yellow;
+}
+
+.playerDiv {
+    background: #0000bb;
+    border-color: yellow;
+}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Jeopardy Game - Player Setup{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Enter player names:</h1>
+        <br/>
+
+        <form action="/start" METHOD = "POST">
+            <input type="text" placeholder="Name" name="name">
+            <input type="submit" value="Add player" class="btn btn-secondary">
+        </form>
+
+
+        <br/><br/>
+
+        <ol>
+            {% for player in players %}
+                <li>
+                    {{ player.name }}
+                    <a href="/update/{{ player.id }}" class="btn btn-outline-secondary btn-sm">Update</a>
+                    <a href="/delete/{{ player.id }}" class="btn btn-outline-danger btn-sm">Delete</a>
+                </li>
+            {% endfor %}
+        </ol>
+
+        <br/><br/>
+
+        <form action="/jeopardy">
+          <button type="submit" class="btn btn-primary center" style="width:196px; height:64px; font-size:30px; text-align:center;">Start Game</button>
+        </form>
+
+    </div>
+{% endblock %}

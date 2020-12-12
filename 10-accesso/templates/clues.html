@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Jeopardy Game - Clue Setup{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>The Clues</h1>
+        <br/>
+
+        <form action="/clues" METHOD = "POST">
+            <h3>Clue:</h3>
+            <input type="text" placeholder="Clue" name="clue">
+            <br/>
+            <h3>Answer:</h3>
+            <input type="text" placeholder="Question" name="question">
+            <input type="submit" value="Add clue" class="btn btn-secondary">
+        </form>
+
+
+        <br/><br/>
+
+        <ol>
+            {% for clue in clues %}
+                <li>
+                    <h4>Clue: </h4>{{ clue.clue }} <br/>
+                    <h4>Answer: </h4>{{ clue.question }} <br/>
+                    <a href="/updateClue/{{ clue.id }}" class="btn btn-outline-secondary btn-sm">Update</a>
+                    <a href="/deleteClue/{{ clue.id }}" class="btn btn-outline-danger btn-sm">Delete</a>
+                </li>
+                <br/>
+            {% endfor %}
+        </ol>
+
+        <form action="/jeopardy">
+          <button type="submit" class="btn btn-primary center" style="width:196px; height:64px; font-size:30px; text-align:center;">Start</button>
+        </form>
+
+        <br/><br/>
+    </div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Jeopardy Game{% endblock %}
+
+{% block content %}
+
+
+        <h1  style="text-align:center">Let's play Jeopardy!</h1>
+
+        <br/>
+        <h2 style="margin-left:5%">Our Players are:</h2>
+        <div class="playerDiv" style="margin-left:10%; margin-right:10%;">
+        <p>
+            {% for player in players %}
+                &nbsp;&nbsp;{{ player.name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {% endfor %}
+        </p>
+        <p>
+
+            {% for player in players %}
+                &nbsp;&nbsp;&nbsp;&nbsp;{{ player.score }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {% endfor %}
+        </p>
+        <p>
+            &emsp;&emsp;
+            {% for player in players %}
+                &nbsp;&nbsp;
+                <a href="/incScore/{{ player.id }}" class="btn btn-outline-secondary btn-sm">+</a>
+                <a href="/decScore/{{ player.id }}" class="btn btn-outline-danger btn-sm">-</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {% endfor %}
+            &nbsp;&nbsp;&nbsp;
+        </p>
+        </div>
+        </article>
+        <br/>
+        <div class="container">
+        <h2>The Clues:</h2>
+            {% for clue in clues %}
+                <a onclick="readClue({{ clue.id }})"  class="btn btn-outline-danger btn-sm" class="clueQuote">Read Aloud</a>
+                <a onclick="showClue({{ clue.id }})" class="btn btn-outline-primary btn-sm"style="margin-left:30%">Clue {{ clue.id }}</a>
+                <div class="clueDiv">
+                    <blockquote>{{ clue.clue }}</blockquote>
+                </div>
+                <div class="ansDiv">
+                    <p style="color:orange">{{ clue.question }}</p>
+                </div>
+                <a onclick="showAnswer({{ clue.id }})" class="btn btn-outline-secondary btn-sm"style="margin-left:80%">Show Answer {{ clue.id }}</a>
+                <br/>
+                <br/>
+            {% endfor %}
+        </div>
+        <article>
+{% endblock %}

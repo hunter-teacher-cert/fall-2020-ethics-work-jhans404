@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Alex Trebek Tribute{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 style="text-align:center">This... is... Alex Trebek</h1>
+        <img src="{{ url_for('static', filename='images/trebek-mustache.jpg') }}" width="60%" class="center">
+    </div>
+
+    <br/><br/>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PPGHAN_Ij58" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endblock %}

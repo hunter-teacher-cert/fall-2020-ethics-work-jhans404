@@ -1,0 +1,29 @@
+h1, h2, h3, h4 {
+    color: white;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+p, table, th, td {
+    color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #333333;
+}
+
+ol {
+    color: pink;
+}
+
+button {
+  background: lightgrey;
+}
+
+.playerDiv {
+    background: #222222;
+    border-color: #333333;
+}
